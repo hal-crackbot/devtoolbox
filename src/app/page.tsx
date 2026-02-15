@@ -10,6 +10,7 @@ const tools = [
   { href: "/jwt-decoder", icon: "🎫", title: "JWT Token Decoder", desc: "Decode JSON Web Tokens and inspect claims" },
   { href: "/text-case-converter", icon: "🔄", title: "Text Case Converter", desc: "Convert between camelCase, snake_case, kebab-case, and more" },
   { href: "/diff-tool", icon: "📊", title: "Text Diff Tool", desc: "Compare two texts and see differences highlighted" },
+  { href: "/file-size-calculator", icon: "📏", title: "File Size Calculator", desc: "Check file sizes and estimate gzip/Brotli compression for deployment" },
   { href: "/base64", icon: "🔐", title: "Base64 Encode/Decode", desc: "Encode and decode Base64 strings" },
   { href: "/url-encode", icon: "🔗", title: "URL Encode/Decode", desc: "Encode and decode URL components" },
   { href: "/color-palette", icon: "🎨", title: "Color Palette Generator", desc: "Generate random color palettes with hex codes" },
