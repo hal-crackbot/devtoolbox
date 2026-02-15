@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "markdown-preview",
     "image-compressor",
     "meta-tag-generator",
+    "uuid-generator",
+    "hash-generator",
+    "timestamp-converter",
+    "css-minifier",
+    "html-entity",
   ];
 
   const blogs = [

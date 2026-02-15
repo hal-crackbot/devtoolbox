@@ -11,6 +11,11 @@ const tools = [
   { href: "/markdown-preview", icon: "📄", title: "Markdown Preview", desc: "Side-by-side Markdown editor and preview" },
   { href: "/image-compressor", icon: "🖼️", title: "Image Compressor", desc: "Compress images client-side in your browser" },
   { href: "/meta-tag-generator", icon: "🏷️", title: "Meta Tag Generator", desc: "Generate HTML meta tags for SEO" },
+  { href: "/uuid-generator", icon: "🆔", title: "UUID Generator", desc: "Generate v4 UUIDs, bulk generate, copy" },
+  { href: "/hash-generator", icon: "🔒", title: "Hash Generator", desc: "Generate MD5, SHA-1, SHA-256 hashes" },
+  { href: "/timestamp-converter", icon: "⏱️", title: "Timestamp Converter", desc: "Convert Unix timestamps to dates and back" },
+  { href: "/css-minifier", icon: "✂️", title: "CSS Minifier", desc: "Minify and compress CSS code" },
+  { href: "/html-entity", icon: "🔤", title: "HTML Entity Encoder/Decoder", desc: "Encode and decode HTML entities" },
 ];
 
 export default function Home() {
