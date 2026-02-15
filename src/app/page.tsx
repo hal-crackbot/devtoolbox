@@ -1,7 +1,12 @@
+'use client';
+
 import Link from "next/link";
+import { useState, useMemo } from "react";
 
 const tools = [
   { href: "/json-formatter", icon: "📋", title: "JSON Formatter", desc: "Format, validate, and minify JSON data" },
+  { href: "/password-generator", icon: "🔑", title: "Password Generator", desc: "Generate secure, random passwords with custom options" },
+  { href: "/qr-generator", icon: "📱", title: "QR Code Generator", desc: "Generate QR codes for text, URLs, and more" },
   { href: "/base64", icon: "🔐", title: "Base64 Encode/Decode", desc: "Encode and decode Base64 strings" },
   { href: "/url-encode", icon: "🔗", title: "URL Encode/Decode", desc: "Encode and decode URL components" },
   { href: "/color-palette", icon: "🎨", title: "Color Palette Generator", desc: "Generate random color palettes with hex codes" },
@@ -19,22 +24,48 @@ const tools = [
 ];
 
 export default function Home() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredTools = useMemo(() => {
+    if (!searchTerm) return tools;
+    return tools.filter(tool =>
+      tool.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      tool.desc.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm]);
+
   return (
     <div>
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
           Free Developer Tools
         </h1>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
           Fast, free, and private. All tools run entirely in your browser — no data ever leaves your device.
         </p>
+        
+        {/* Search Bar */}
+        <div className="max-w-md mx-auto">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search tools..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full px-4 py-3 pl-10 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            />
+            <div className="absolute left-3 top-3.5 text-gray-400">
+              🔍
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Google AdSense Ad Slot */}
       <div className="ad-slot mb-8">{/* Ad placeholder - replace with AdSense code */}</div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {tools.map((t) => (
+        {filteredTools.map((t) => (
           <Link
             key={t.href}
             href={t.href}
