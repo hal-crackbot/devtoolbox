@@ -20,16 +20,16 @@ export default function QRGenerator() {
       // Import the qrcode-generator library dynamically
       const QRCode = (await import('qrcode-generator')).default;
       
-      // Map error correction levels
+      // Map error correction levels to qrcode-generator constants
       const errorCorrectionLevel = {
-        'L': QRCode.ErrorCorrectionLevel.L,
-        'M': QRCode.ErrorCorrectionLevel.M, 
-        'Q': QRCode.ErrorCorrectionLevel.Q,
-        'H': QRCode.ErrorCorrectionLevel.H
+        'L': 'L',
+        'M': 'M', 
+        'Q': 'Q',
+        'H': 'H'
       }[errorCorrection];
 
-      // Create QR code instance
-      const qr = QRCode(0, errorCorrectionLevel);
+      // Create QR code instance (typeNumber 0 = auto, errorCorrectionLevel as string)
+      const qr = QRCode(0, errorCorrectionLevel as any);
       qr.addData(text);
       qr.make();
 
