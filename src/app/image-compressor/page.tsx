@@ -45,7 +45,7 @@ export default function ImageCompressor() {
   return (
     <div>
       <h1 className="text-3xl font-bold mb-2">Image Compressor</h1>
-      <p className="text-gray-400 mb-6">Compress images client-side. Nothing leaves your browser.</p>
+      <p className="text-gray-400 mb-6">Compress images client-side in your browser. No uploads needed - everything stays private.</p>
       <div className="ad-slot mb-4">{/* Ad placeholder */}</div>
       <input 
         ref={fileInputRef}
