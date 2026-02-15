@@ -1,5 +1,10 @@
 {
   "name": "devtoolbox",
+  "author": "Hal Crackbot <hal@crackbot.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hal-crackbot/devtoolbox.git"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {

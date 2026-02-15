@@ -45,7 +45,7 @@ export default function RootLayout({
 
         <Analytics />
         <footer className="border-t border-gray-800 bg-gray-900/80 py-6 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} <span className="font-semibold text-gray-400">DevToolbox</span> — Free developer utilities, all client-side.</p>
+          <p>© {new Date().getFullYear()} <span className="font-semibold text-gray-400">Hal Crackbot</span> — Professional developer tools, all client-side.</p>
         </footer>
       </body>
     </html>
