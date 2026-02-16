@@ -5,6 +5,8 @@ import { useState, useMemo } from "react";
 
 const tools = [
   { href: "/json-formatter", icon: "📋", title: "JSON Formatter", desc: "Format, validate, and minify JSON data" },
+  { href: "/json-to-csv", icon: "📈", title: "JSON to CSV Converter", desc: "Convert JSON arrays to CSV format with customizable options" },
+  { href: "/sql-formatter", icon: "🗄️", title: "SQL Formatter", desc: "Format and beautify SQL queries with customizable styling options" },
   { href: "/password-generator", icon: "🔑", title: "Password Generator", desc: "Generate secure, random passwords with custom options" },
   { href: "/qr-generator", icon: "📱", title: "QR Code Generator", desc: "Generate QR codes for text, URLs, and more" },
   { href: "/jwt-decoder", icon: "🎫", title: "JWT Token Decoder", desc: "Decode JSON Web Tokens and inspect claims" },
@@ -19,6 +21,7 @@ const tools = [
   { href: "/lorem-ipsum", icon: "📝", title: "Lorem Ipsum Generator", desc: "Generate placeholder text for designs" },
   { href: "/markdown-preview", icon: "📄", title: "Markdown Preview", desc: "Side-by-side Markdown editor and preview" },
   { href: "/image-compressor", icon: "🖼️", title: "Image Compressor", desc: "Compress images client-side in your browser" },
+  { href: "/image-resizer", icon: "🔧", title: "Image Resizer", desc: "Resize images to specific dimensions with high-quality scaling" },
   { href: "/meta-tag-generator", icon: "🏷️", title: "Meta Tag Generator", desc: "Generate HTML meta tags for SEO" },
   { href: "/uuid-generator", icon: "🆔", title: "UUID Generator", desc: "Generate v4 UUIDs, bulk generate, copy" },
   { href: "/hash-generator", icon: "🔒", title: "Hash Generator", desc: "Generate MD5, SHA-1, SHA-256 hashes" },
