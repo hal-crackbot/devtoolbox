@@ -153,7 +153,7 @@ export default function SqlFormatter() {
     try {
       await navigator.clipboard.writeText(formattedSql);
       const button = document.getElementById('copy-button');
-      const originalText = button?.textContent;
+      const originalText = button?.textContent ?? 'Copy SQL';
       if (button) {
         button.textContent = 'Copied!';
         setTimeout(() => {
