@@ -120,7 +120,7 @@ export default function JsonToCsv() {
       await navigator.clipboard.writeText(csvOutput);
       // Show a temporary success message
       const button = document.getElementById('copy-button');
-      const originalText = button?.textContent;
+      const originalText = button?.textContent ?? 'Copy CSV';
       if (button) {
         button.textContent = 'Copied!';
         setTimeout(() => {
