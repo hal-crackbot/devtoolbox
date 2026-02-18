@@ -6,7 +6,7 @@ Free, fast, client-side utilities for web developers. All tools run in your brow
 
 ## 🚀 Live Site
 
-**https://devtoolbox-hal.vercel.app** (coming soon)
+**https://devtoolbox-delta.vercel.app** — Live now!
 
 ## 🛠️ Tools Available
 
